@@ -46,5 +46,5 @@ Este projeto foi desenvolvido com base em um desafio disponível em frontendment
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/LeandroCabralLC/COMPONENTE_DE_AVALIA-O.git
+   git clone https://github.com/LeandroCabralLC/FORMULARIO-CONTATO.git
 
