@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <form class="form-container" id="contactForm" novalidate>
+    <h2>Contate-nos</h2>
+
+    <div class="row">
+      <div>
+        <label for="firstName">Nome *</label>
+        <input type="text" id="firstName" name="firstName" />
+      </div>
+      <div>
+        <label for="lastName">Sobrenome *</label>
+        <input type="text" id="lastName" name="lastName" />
+      </div>
+    </div>
+
+    <label for="email">Endereço de e-mail *</label>
+    <input type="email" id="email" name="email" />
+
+    <label>Tipo de consulta *</label>
+    <div class="radio-group" id="queryGroup">
+      <div class="radio-item">
+        <label>
+          <input type="radio" name="queryType" value="Consulta Geral" /> Consulta Geral
+        </label>
+      </div>
+      <div class="radio-item">
+        <label>
+          <input type="radio" name="queryType" value="Solicitação de Suporte" /> Solicitação de Suporte
+        </label>
+      </div>
+    </div>
+
+    <label for="message">Messagem *</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <div class="checkbox">
+      <label><input type="checkbox" id="consent" name="consent" /> Eu concordo em ser contatado pela equipe *</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

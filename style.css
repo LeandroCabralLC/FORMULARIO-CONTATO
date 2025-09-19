@@ -1,0 +1,139 @@
+    @font-face {
+      font-family: 'Karla';
+      src: url('fonts/Karla-VariableFont_wght.ttf');
+    }
+
+    body {
+      background-color: #e8f5f1;
+      font-family: 'Karla', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 550px;
+    }
+
+    .form-container h2 {
+      margin-bottom: 1.5rem;
+      font-size: 24px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .row > div {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .radio-item {
+      border: 1px solid #ccc;   
+      border-radius: 6px;          
+      padding: 1rem 1.2rem;          
+      width: 200px;                
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;                 
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+      background: #fff;
+    }
+
+    .radio-item input[type="radio"] {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .radio-item.selected {
+      border-color: #007b5e;
+      background: rgba(0,123,94,0.03);
+    }
+
+    .checkbox {
+      margin-top: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.9rem;
+      background-color: #007b5e;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00664d;
+    }
+
+    
+    .error {
+      border: 1px solid #d93025 !important;
+      box-shadow: 0 0 0 1px rgba(217,48,37,0.03);
+    }
+
+    .radio-group.error .radio-item {
+      border-color: #d93025;
+    }
+
+    .error-message {
+      color: #d93025;
+      font-size: 0.9rem;
+      margin-top: 0.35rem;
+    }
+
+    
+    textarea.error {
+      min-height: 100px;
+    }
+
+    
+    @media (max-width: 480px) {
+      .radio-item {
+        width: 100%;
+        padding: 0.8rem;
+      }
+      .radio-group { flex-direction: column; }
+      .row { flex-direction: column; }
+    }
